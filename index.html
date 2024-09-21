@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quires</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "img1 img2"
+                                  "img3  img4"
+                                   "img5  img4";
+           
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2; 
+            
+           
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        @media  screen and  (width < 600px){
+            .container{
+                display: flex;
+                flex-direction:column ;
+            }
+            input{
+                width: 200px;
+            }
+            button{
+                width: 200px;
+            }
+            .img{
+                height: 350px;
+                width:300px;
+            }
+            
+        }
+        @media  screen and ( width >600px) {
+            .container{
+                display: flex;
+
+            }
+           input{
+            width: 500px;
+            
+           }
+           button{
+            width: 500px;
+           }
+           .img{
+                height: 400px;
+                width: 300px;
+            }
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            padding: 40px;
+            
+        }
+        a{
+            opacity: 80%;
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            font-family:"Raleway", Arial, sans-serif;
+        }
+        a:hover{
+            background-color:lightgray;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .about{
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        
+
+
+    </style>
+</head>
+<body style="background-color:lightsteelblue;">
+    <div class="nav">
+       <a href="#container">MY ART</a>
+
+       <a href="#about">About</a>
+    </div>
+    <!--------main-------->
+  <div class="container" id="container" style="margin: -8px;">
+    <div class="">
+    <div class="img1"><img src="./streetart.jpg" alt=""></div>
+    <div class="img3"><img src="./streetart2.jpg" alt="" style="margin-top: -4px;"></div>
+    <div class="img5"><img src="./streetart5.jpg" alt="" style="margin-top: -4px;"></div>
+   </div>
+   <div class="" >
+    <div class="img2"><img src="./streetart3.jpg" alt="" ></div>
+    <div class="img4"><img src="./streetart4.jpg" alt="" style="margin-top: -4px;"></div>
+</div>
+  </div>
+  <br><br>
+
+  <!--------about-->
+  <div class="about" id="about">
+    <h1>About</h1>
+
+<br>
+<br>
+<div class="boy">
+    <img src="./boy.jpg" class="img">
+</div>
+  <div style="width: 70vw;">
+<center>
+<p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+    ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+    Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt
+    sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+    fringilla.</p>
+</center>
+<br>
+<br>
+<center>
+    <p  style="color: red;">Do not hesitate to contact me!</p>
+</center>
+<br>
+<div class="form">
+    <center>
+    <div style="display: block; ">
+   <p> <label >NAME</label></p>
+    <input type="text" required  style=" height: 30px;">
+</div>
+<br>
+<div>
+   <p> <label >Email</label></p>
+    <input type="text" required  style=" height: 30px;">
+</div>
+<br>
+
+<div>
+  <p>  <label >Message</label></p>
+    <input type="text" required  style=" height: 30px;">
+</div>
+<br><br>
+<button style=" height: 30px; background-color: darkgrey; font-size: 15px;" >Send</button>
+</center>
+</div>
+<br>
+<br>
+<center>
+    <p>
+powerd by <a href="https://www.w3schools.com/w3css/default.asp"><span style="text-decoration: underline;">w3.css</span></a></p>
+</center>
+
+</div>
+  </div>
+
+</body>
+</html>
